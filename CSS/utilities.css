@@ -33,6 +33,12 @@
     transform: scale(.98);
 }
 
+/* Backgrounds & colored buttons */
+.bg-primary, .btn-primary{
+    background-color: var(--primary-color);
+    color: white;
+}
+
 .text-center {
     text-align: center;
 }
@@ -122,4 +128,20 @@
 }
 .p-5 {
     padding: 4rem;
+}
+
+/* Cli */
+.cli .grid {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+}
+
+.cli .grid > *:first-child{
+    grid-column: 1 / span 2;
+    grid-row: 1 / span 2;
+}
+
+/* Cloud */
+.cloud .grid {
+    grid-template-columns: 4fr 3fr;
 }
